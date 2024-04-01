@@ -59,7 +59,7 @@ params:
     list:
       - position: Staff Machine Learning Researcher
         dates: 2020 - *Present*
-        url: "sra.samsung.com"
+        url: "https://sra.samsung.com"
         company: Samsung Research America
         details: |1-
           - Research on language guided camera systems for improving image aesthetics
@@ -68,7 +68,7 @@ params:
           - Research and develop state of the art solutions for audio driven photorealistic lip-sync models
       - position: Machine Learning Engineer
         dates: 2019 - 2020
-        url: "seekr.com"
+        url: "https://seekr.com"
         company: Ntent
         details: |1-
           - Research and Develop Deep learning models in the space of dialog understanding for conversational AI
