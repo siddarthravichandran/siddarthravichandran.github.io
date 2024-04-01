@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Siddarth Ravichandran</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Siddarth" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.124.1" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/sid_150x150.png">        <link rel="icon" type="image/png" sizes="32x32" href="/sid_32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/sid_16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+
+
+
+<link href="/main.css" rel="stylesheet" />
+
+
+  
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="http://localhost:1313/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">Blog</a>
+  </div>
+  
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
+      <div class="flex flex-col justify-center">
+        <div class=""><div class="w-100 h-100 flex justify-center p-4">
+  <img
+    class="rounded rounded-full"
+    src="/images/profile_siddarth.jpg"
+    alt="Siddarth"
+    style="max-width: 250px"
+  />
+</div>
+</div>
+        <div class="p-2 text-center">
+          <h1 class="mb-0">Siddarth Ravichandran</h1>
+<h2 class="mb-0">Machine Learning Researcher</h2>
+<h3 class="mb-4">Mountain View, CA</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.linkedin.com/in/siddarthravichandran">
+      <i class="mt-1 fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.github.com/siddu9501">
+      <i class="mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://scholar.google.com/citations?user=lPTx6GAAAAAJ&amp;hl=en">
+      <i class="mt-1 ai ai-google-scholar"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="mailto:ravichandran.siddarth@gmail.com">
+      <i class="mt-1 fa fa-envelope"></i>
+    </a>
+  </div>
+  
+</div>
+ 
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-span-3 relative">
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion active">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-user"></i>
+          About Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  I am motivated by the challenge and impact of solving real-world problems with cutting-edge AI techniques. I am passionate about advancing the state of the art in generative AI and multimodal representation learning. I currently apply my research and engineering skills to develop and deploy novel deep learning models in the space of multi-modal image and video synthesis.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-briefcase"></i>
+          Experiences</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4 style="text-decoration: underline;">Staff Machine Learning Researcher</h4>
+<p class="mb-0">
+  2020 - <em>Present</em> &middot; 
+  <a href="sra.samsung.com">Samsung Research America</a>
+  
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Research on language guided camera systems for improving image aesthetics</li>
+<li>Pioneer novel approaches in the space of multi-modal video generation efficiently</li>
+<li>Address the problem of cross-modal disentanglement for zero shot photorealistic digital avatars&rsquo; video synthesis from limited data</li>
+<li>Research and develop state of the art solutions for audio driven photorealistic lip-sync models</li>
+</ul>
+
+</div>
+
+
+
+<h4 style="text-decoration: underline;">Machine Learning Engineer</h4>
+<p class="mb-0">
+  2019 - 2020 &middot; 
+  <a href="seekr.com">Ntent</a>
+  
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Research and Develop Deep learning models in the space of dialog understanding for conversational AI</li>
+<li>Research on solving search dissambiguation problem for personalized search</li>
+</ul>
+
+</div>
+
+
+
+<h4 style="text-decoration: underline;">Machine learning Research Intern</h4>
+<p class="mb-0">
+  2018 - 2018 &middot;  Huawei Technologies 
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Develop image in-painting for huawei smartphone cameras.</li>
+<li>Optimize deep learning models for deployment on Kirin NPUs</li>
+</ul>
+
+</div>
+
+
+
+<h4 style="text-decoration: underline;">Research Assistant</h4>
+<p class="mb-0">
+  2017 - 2019 &middot; 
+  <a href="https://cseweb.ucsd.edu/groups/guru/">GURU Lab, UCSD</a>
+  
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Research on deep learning systems for representation learning, pose recognition and Generative adversarial networks</li>
+</ul>
+
+</div>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-graduation-cap"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">M.S. in Computer Science</h4>
+<p >2017 - 2019 &middot; University of California-San Diego</p>
+
+
+
+<h4 style="text-decoration: underline;">B.S. in Computer Science</h4>
+<p >2012 - 2016 &middot; VIT University, Vellore</p>
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-book"></i>
+          Publications</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+
+<h4 style="text-decoration: underline;">Journal Articles</h4><p class="foo indent-8">2013.
+
+
+<a href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=29fe915bb9750e62552d977dd835cd4a81bc2faa">
+  <em>Encryption of a Binary String Using Music Notes and Graph theory.</em>
+</a>
+
+
+M Yamuna, A Sankar, Siddarth Ravichandran, V Harish.
+IJET.
+</p>
+
+
+<h4 style="text-decoration: underline;">Proceedings</h4><p class="foo indent-8">2023.
+
+
+<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Ravichandran_Synthesizing_Photorealistic_Virtual_Humans_Through_Cross-Modal_Disentanglement_CVPR_2023_paper.pdf">
+  <em>Synthesizing Photorealistic Virtual Humans through cross-modal disentanglement.</em>
+</a>
+
+
+Siddarth Ravichandran, Ondřej Texler, Dimitar Dinev, Hyun Jae Kang.
+CVPR 2023.
+</p>
+<p class="foo indent-8">2019.
+
+
+<a href="https://ml4physicalsciences.github.io/2019/files/NeurIPS_ML4PS_2019_139.pdf">
+  <em>Using deep Siamese neural networks to speed up natural products research.</em>
+</a>
+
+
+Nicholas Roberts, Poornav S Purushothama, Vishal T Vasudevan, Siddarth Ravichandran, Chen Zhang, William H Gerwick, Garrison W Cottrell.
+NeurIPS - ML4PS workshop.
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-project-diagram"></i>
+          Projects</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4>
+  <a href="https://github.com/siddu9501/WPGCycleGAN/tree/master/pytorch-WCycleGAN">Progressive Cycle GAN</a>
+</h4>
+<p class="markdownify indent-8">Neural Style transfer on unpaired datasets by improving Cycle GAN with progressive training on a subset of the ImageNet dataset.</p>
+
+<h4>
+  <a href="https://github.com/GV1028/Temporal_Video_GAN">Temporal Video GAN</a>
+</h4>
+<p class="markdownify indent-8">A generative model for long video generation with dynamic backgrounds and temporal coherence from Gaussian Noise.</p>
+
+<h4>
+  <a href="https://github.com/siddu9501/st-gcn-MSR">Spatio-Temporal Graph Convolution Networks</a>
+</h4>
+<p class="markdownify indent-8">A spatio-temporal graph convolution network for activity recognition from sparse skeletal motion data.</p>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-cogs"></i>
+          Skills</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        id="skill-panel"
+        
+      >
+        <div class=""><script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+<code>Python, Deep learning: Pytorch, Tensorflow; Machine learning, Computer Vision and Language models</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>C&#43;&#43;</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="70% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Dockerization and Model inference orchestration; AWS, EKS, k8s, Docker</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="70% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-gamepad"></i>
+          Hobbies</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Landscape photography</li>
+  
+  <li class="list-unstyled mb-2">Enjoy weekend hikes</li>
+  
+  <li class="list-unstyled mb-2">Road and trail biking</li>
+  
+  <li class="list-unstyled mb-2">Build and fly drones</li>
+  
+</ul>
+</div>
+      </div>
+    </div>
+    
+
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>

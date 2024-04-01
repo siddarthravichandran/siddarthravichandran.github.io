@@ -1,0 +1,164 @@
+baseURL: https://siddarthravichandran.github.io/
+languageCode: en-us
+build:
+  writeStats: true
+params:
+  title: Siddarth Ravichandran
+  author: Siddarth
+  description: Website title
+  theme:
+    mainTheme: dark
+    showAttribute: true
+    singlePage: false
+  favicons:
+    use: true
+    metas: |2-
+              <link rel="apple-touch-icon" sizes="180x180" href="sid_150x150.png">
+              <link rel="icon" type="image/png" sizes="32x32" href="sid_32x32.png">
+              <link rel="icon" type="image/png" sizes="16x16" href="sid_16x16.png">
+              <link rel="manifest" href="site.webmanifest">
+              <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+              <link rel="shortcut icon" href="favicon.ico">
+
+  profile:
+    name: "Siddarth Ravichandran"
+    tagline: Machine Learning Researcher
+    location: "Mountain View, CA"
+    photo: profile_siddarth.jpg
+  social:
+    title: Links
+    list:
+      - icon: fab fa-linkedin-in
+        url: "https://www.linkedin.com/in/siddarthravichandran"
+        title: LinkedIn
+      - icon: fab fa-github
+        url: "https://www.github.com/siddu9501"
+        title: GitHub
+      - icon: ai ai-google-scholar
+        url: "https://scholar.google.com/citations?user=lPTx6GAAAAAJ&hl=en"
+        title: Google Scholar
+      - icon: fa fa-envelope
+        url: "mailto:ravichandran.siddarth@gmail.com"
+        title: Email
+  showInAccordion:
+    - item: aboutme
+      expand: true
+    - item: experience
+    - item: education
+    - item: publication
+    - item: project
+    - item: skill
+    - item: hobby
+  aboutme:
+    title: About Me
+    icon: fas fa-user
+    description: I am motivated by the challenge and impact of solving real-world problems with cutting-edge AI techniques. I am passionate about advancing the state of the art in generative AI and multimodal representation learning. I currently apply my research and engineering skills to develop and deploy novel deep learning models in the space of multi-modal image and video synthesis. 
+  experience:
+    title: Experiences
+    icon: fas fa-briefcase
+    list:
+      - position: Staff Machine Learning Researcher
+        dates: 2020 - *Present*
+        url: "sra.samsung.com"
+        company: Samsung Research America
+        details: |1-
+          - Research on language guided camera systems for improving image aesthetics
+          - Pioneer novel approaches in the space of multi-modal video generation efficiently
+          - Address the problem of cross-modal disentanglement for zero shot photorealistic digital avatars' video synthesis from limited data
+          - Research and develop state of the art solutions for audio driven photorealistic lip-sync models
+      - position: Machine Learning Engineer
+        dates: 2019 - 2020
+        url: "seekr.com"
+        company: Ntent
+        details: |1-
+          - Research and Develop Deep learning models in the space of dialog understanding for conversational AI
+          - Research on solving search dissambiguation problem for personalized search
+      - position: Machine learning Research Intern
+        dates: 2018 - 2018
+        company: Huawei Technologies
+        details: |1-
+          - Develop image in-painting for huawei smartphone cameras.
+          - Optimize deep learning models for deployment on Kirin NPUs 
+      - position: Research Assistant
+        dates: 2017 - 2019
+        company: GURU Lab, UCSD
+        url: "https://cseweb.ucsd.edu/groups/guru/"
+        details: |1-
+          - Research on deep learning systems for representation learning, pose recognition and Generative adversarial networks
+
+  education:
+    title: Education
+    icon: fas fa-graduation-cap
+    list:
+      - degree: M.S. in Computer Science
+        college: University of California-San Diego
+        dates: 2017 - 2019
+      - degree: B.S. in Computer Science
+        college: VIT University, Vellore
+        dates: 2012 - 2016
+  publication:
+    title: Publications
+    icon: fas fa-book
+    format:
+      - date
+      - title
+      - authors
+      - journal
+    types:
+      - Journal Articles
+      - Proceedings
+    list:
+      - title: >-
+          Synthesizing Photorealistic Virtual Humans through cross-modal disentanglement
+        authors: "Siddarth Ravichandran, Ondřej Texler, Dimitar Dinev, Hyun Jae Kang"
+        date: "2023"
+        journal: "CVPR 2023"
+        url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ravichandran_Synthesizing_Photorealistic_Virtual_Humans_Through_Cross-Modal_Disentanglement_CVPR_2023_paper.pdf"
+        type: Proceedings
+      - title: >-
+          Using deep Siamese neural networks to speed up natural products research
+        authors: "Nicholas Roberts, Poornav S Purushothama, Vishal T Vasudevan, Siddarth Ravichandran, Chen Zhang, William H Gerwick, Garrison W Cottrell"
+        date: "2019"
+        journal: "NeurIPS - ML4PS workshop"
+        url: "https://ml4physicalsciences.github.io/2019/files/NeurIPS_ML4PS_2019_139.pdf"
+        type: Proceedings
+      - title: >-
+          Encryption of a Binary String Using Music Notes and Graph theory
+        authors: "M Yamuna, A Sankar, Siddarth Ravichandran, V Harish"
+        date: "2013"
+        journal: "IJET"
+        url: "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=29fe915bb9750e62552d977dd835cd4a81bc2faa"
+        type: Journal Articles
+  project:
+    title: Projects
+    icon: fas fa-project-diagram
+    list:
+      - title: Progressive Cycle GAN
+        url: "https://github.com/siddu9501/WPGCycleGAN/tree/master/pytorch-WCycleGAN"
+        description: Neural Style transfer on unpaired datasets by improving Cycle GAN with progressive training on a subset of the ImageNet dataset.
+      - title: Temporal Video GAN
+        url: "https://github.com/GV1028/Temporal_Video_GAN"
+        description: A generative model for long video generation with dynamic backgrounds and temporal coherence from Gaussian Noise.
+      - title: Spatio-Temporal Graph Convolution Networks
+        url: "https://github.com/siddu9501/st-gcn-MSR"
+        description: A spatio-temporal graph convolution network for activity recognition from sparse skeletal motion data.
+      
+  skill:
+    title: Skills
+    panelId: skill-panel
+    icon: fas fa-cogs
+    list:
+      - skill: "Python, Deep learning: Pytorch, Tensorflow; Machine learning, Computer Vision and Language models"
+        skillrating: 90
+      - skill: "C++"
+        skillrating: 70
+      - skill: "Dockerization and Model inference orchestration; AWS, EKS, k8s, Docker"
+        skillrating: 70
+  hobby:
+    title: Hobbies
+    icon: fas fa-gamepad
+    list:
+      - hobby: Landscape photography
+      - hobby: Enjoy weekend hikes
+      - hobby: Road and trail biking
+      - hobby: Build and fly drones
